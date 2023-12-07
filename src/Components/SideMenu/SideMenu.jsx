@@ -3,17 +3,20 @@ import { Link } from "react-router-dom";
 
 const SideMenu = () => {
     return (
-        <div className="fixed right-8 h-full w-12 ">
-            <div className=" border-2  h-full  my-auto">
-                <div className="grid grid-rows-6 justify-center place-content-center border-2 text-3xl   my-auto gap-5">
+        <div className="fixed right-0  ">
+            <div className=" ">
+                <div className="grid 
+                 items-center 
+                 justify-center w-1/2 my-48  text-white  text-3xl  
+                 gap-2">
 
-                    <Link >
+                    <Link className="bg-gray-600 bg-opacity-50 p-2 rounded-lg" >
                         <FaHome />
                     </Link>
-                    <Link>
+                    <Link to="#aboutUs" className="bg-gray-600 bg-opacity-50 p-2  rounded-lg">
                         <FaAward />
                     </Link>
-                    <Link>
+                    <Link className="bg-gray-600 bg-opacity-50 p-2  rounded-lg">
                         <Fa500Px />
                     </Link>
                 </div>
