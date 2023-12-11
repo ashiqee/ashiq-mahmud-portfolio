@@ -31,7 +31,7 @@ const Home = () => {
       className="bg-gradient-to-r  text-white from-[#0c0c1d] to-slate-700"
     >
       {/* sidebar  */}
-      <div className="fixed right-0  ">
+      <div className="fixed right-0  z-40">
         <div className=" ">
           <div
             className="grid 
@@ -136,9 +136,26 @@ const Home = () => {
       </div>
 
       {/* main Home Page  */}
-      <div className="overflow-y-auto">
-        <section>{activePage === "home" && <Banner />}</section>
-        <section>{activePage === "about" && <AboutUs />}</section>
+      <div className="overflow-y-scroll overscroll-none overflow-x-hidden">
+        <section>
+          {activePage === "home" && (
+            <div
+              className="-z-50"
+              data-aos="flip-right"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <Banner />
+            </div>
+          )}
+        </section>
+
+        <section>
+          {activePage === "about" && (
+            <div data-aos="flip-left" data-aos-offset="200" data-aos-delay="50">
+              <AboutUs />
+            </div>
+          )}
+        </section>
 
         <section>{activePage === "skills" && <Portfolio />}</section>
       </div>
