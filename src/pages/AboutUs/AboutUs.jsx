@@ -5,43 +5,80 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { SiMongodb, SiExpress } from "react-icons/si";
 
 const AboutUs = () => {
   const data = [
     {
       label: "Main skills",
       value: "mainSkills",
-      desc: <>MERN STACK DEVELOPER</>,
+      desc: <>
+        <h2 className="text-xl text-white">MERN STACK DEVELOPER</h2>
+        <hr />
+        <div className="space-y-2 mt-2">
+          <span className="flex gap-2 items-center text-3xl text-green-600">
+
+            <SiMongodb /><progress className="progress progress-success w-full md:w-56" value={85} max="100"></progress>
+          </span>
+          <span className="flex gap-2 items-center text-3xl text-red-400">
+
+            <SiExpress /><progress className="progress progress-error w-full md:w-56" value={80} max="100"></progress>
+          </span>
+          <span className="flex gap-2 items-center text-3xl text-[#00FFFF]">
+
+            <FaReact className="animate-spin" /><progress className="progress progress-info w-full md:w-56" value={99} max="100"></progress>
+          </span>
+
+          <span className="flex gap-2 items-center text-3xl text-green-800">
+
+            <FaNodeJs /><progress className="progress  progress-success w-full md:w-56" value={81} max="100"></progress>
+          </span>
+        </div>
+
+
+        {/* html5 css3 javascript
+        git
+        react tailwind nodejs express firebase mongodb nextjs */}
+      </>,
     },
     {
-      label: "Education & Certification",
+      label: "Education",
       value: "education",
-      desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc: <>
+        <div>
+          <h2 className="text-md text-white ">
+            BSc in CSE - <span className="text-gray-300"> Canadian University of Bangladesh</span>
+            <br />
+            2022
+          </h2>
+        </div>
+
+      </>,
     },
 
-    {
-      label: "Awards",
-      value: "awards",
-      desc: `We're not always in the position that we want to be at.
-          We're constantly growing. We're constantly making mistakes. We're
-          constantly trying to express ourselves and actualize our dreams.`,
-    },
+    // {
+    //   label: "Awards",
+    //   value: "awards",
+    //   desc: `We're not always in the position that we want to be at.
+    //       We're constantly growing. We're constantly making mistakes. We're
+    //       constantly trying to express ourselves and actualize our dreams.`,
+    // },
   ];
   return (
     <div
       id="aboutUs"
-      className="h-screen items-center justify-between mx-auto container"
+      className="min-h-screen p-5 items-center justify-between mx-auto container"
     >
-      <div className="grid grid-cols-3  ">
-        <div className="text-right  py-28 mr-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3  ">
+        <div className="text-right  lg:py-28 lg:mr-5">
           <img
             className="rounded-e-md "
             src="https://cadmore.media/wp-content/uploads/2022/05/digital-web-designer-900x900-1-495x400.jpg"
             alt=""
           />
         </div>
-        <div className="col-span-2 py-28 space-y-6">
+        <div className="col-span-2 lg:py-28 py-5 space-y-6">
           <div className="space-y-6">
             <h2 className="text-4xl uppercase">About Me</h2>
             <p className="text-justify">
@@ -54,8 +91,8 @@ const AboutUs = () => {
               creativity."
             </p>
           </div>
-          <Tabs id="custom-animation" value="html">
-            <TabsHeader>
+          <Tabs id="custom-animation" defaultIndex='mainSkills' value="html">
+            <TabsHeader className="bg-[#00FFFF] w-96">
               {data.map(({ label, value }) => (
                 <Tab key={value} value={value}>
                   {label}

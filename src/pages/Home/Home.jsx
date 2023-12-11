@@ -25,39 +25,42 @@ const Home = () => {
       handlePageChange("home");
     }
   };
+
+  const activeCSS = `border text-[#00FFFF]  rotate-90  my-12 rounded-md`;
+  const menuNormalCSS = ` border border-red-200 pr-4  hover:text-[#00FFFF]  rounded-md`;
   return (
     <div
       onWheel={handleScroll}
       className="bg-gradient-to-r  text-white from-[#0c0c1d] to-slate-700"
     >
       {/* sidebar  */}
-      <div className="fixed right-0  z-40">
-        <div className=" ">
+      <div className="fixed right-0 hidden lg:block z-40">
+        <div className=" my-40 ">
           <div
             className="grid 
                  items-center 
-                 justify-center w-1/2 my-48  text-white   
+                 justify-center  lg:w-48  text-white   
                  gap-2"
           >
             <Link
               onClick={() => handlePageChange("home")}
               className={
                 activePage === "home"
-                  ? "border text-[#00FFFF] rotate-90 my-12 rounded-md"
-                  : " border border-red-200 pr-4  hover:text-[#00FFFF]  rounded-md"
+                  ? `${activeCSS}`
+                  : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
                 <span
                   className={
                     activePage === "home"
-                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90  text-black text-xl"
+                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90 rounded-md text-black text-xl"
                       : "bg-gray-600 bg-opacity-50 w-12 p-4  hover:bg-[#00FFFF]  hover:text-black text-xl"
                   }
                 >
                   <FaHome />
                 </span>
-                <h3 className="hover:scale-x-110 mx-auto transition-transform transform">
+                <h3 className="hover:scale-x-110  mx-auto transition-transform transform">
                   HOME
                 </h3>
               </div>
@@ -66,8 +69,8 @@ const Home = () => {
               onClick={() => handlePageChange("about")}
               className={
                 activePage === "about"
-                  ? "border text-[#00FFFF] rotate-90 my-12 rounded-md"
-                  : " border border-red-200 pr-4  hover:text-[#00FFFF]  rounded-md"
+                  ? `${activeCSS}`
+                  : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
@@ -89,8 +92,8 @@ const Home = () => {
               onClick={() => handlePageChange("skills")}
               className={
                 activePage === "skills"
-                  ? "border text-[#00FFFF] rotate-90 my-12 rounded-md"
-                  : " border border-red-200 pr-4  hover:text-[#00FFFF]  rounded-md"
+                  ? `${activeCSS}`
+                  : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
@@ -112,8 +115,8 @@ const Home = () => {
               onClick={() => handlePageChange("projects")}
               className={
                 activePage === "projects"
-                  ? "border pr-4  text-[#00FFFF] rotate-90 my-12 rounded-md"
-                  : " border border-red-200 pr-4  hover:text-[#00FFFF]  rounded-md"
+                  ? `${activeCSS}`
+                  : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
@@ -136,13 +139,14 @@ const Home = () => {
       </div>
 
       {/* main Home Page  */}
-      <div className="overflow-y-scroll overscroll-none overflow-x-hidden">
+      <div className="overflow-y-scroll overscroll-none ">
         <section>
           {activePage === "home" && (
             <div
               className="-z-50"
               data-aos="flip-right"
-              data-aos-anchor-placement="bottom-bottom"
+              data-aos-offset="200" data-aos-delay="50"
+
             >
               <Banner />
             </div>
@@ -160,12 +164,12 @@ const Home = () => {
         <section>{activePage === "skills" && <Portfolio />}</section>
       </div>
 
-      <button
+      {/* <button
         onClick={() => handlePageChange("home")}
         className="absolute text-3xl bottom-2 right-0 p-4"
       >
         <FaArrowAltCircleUp />
-      </button>
+      </button> */}
     </div>
   );
 };
