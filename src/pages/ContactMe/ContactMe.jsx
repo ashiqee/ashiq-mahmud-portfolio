@@ -2,23 +2,26 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <div>
-      <div className="relative flex overflow-x-hidden">
-        <div className="py-12 animate-marquee whitespace-nowrap">
-          <span className="text-4xl mx-4">Marquee Item 1</span>
-          <span className="text-4xl mx-4">Marquee Item 2</span>
-          <span className="text-4xl mx-4">Marquee Item 3</span>
-          <span className="text-4xl mx-4">Marquee Item 4</span>
-          <span className="text-4xl mx-4">Marquee Item 5</span>
-        </div>
+    <div className="min-h-screen container p-10 mx-auto grid md:grid-cols-2 grid-cols-1  items-center">
+      <div className="space-y-3">
+        <h2 className="text-3xl uppercase">Contact <span className="text-[#00FFFF]">ME</span></h2>
+        <p>I am available .Connect with me vai phone: <br />
+          <b className="text-[#00FFFF]">+880-1614-654397</b> or email: <b className="text-[#00FFFF]">aashekmahmud@gmail.com</b>
+        </p>
+        <form className="space-y-2" action="">
+          <input className="input input-primary w-full" placeholder="Your Name" type="text" /><br />
+          <input className="input input-primary w-full" placeholder="Your Email" type="email" /><br />
+          <input className="input input-primary w-full" placeholder="Subject" type="text" /><br />
 
-        <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-          <span className="text-4xl mx-4">Marquee Item 1</span>
-          <span className="text-4xl mx-4">Marquee Item 2</span>
-          <span className="text-4xl mx-4">Marquee Item 3</span>
-          <span className="text-4xl mx-4">Marquee Item 4</span>
-          <span className="text-4xl mx-4">Marquee Item 5</span>
-        </div>
+          <textarea className="textarea textarea-bordered w-full" placeholder="Your Message" ></textarea> <br />
+
+          <button type="submit" className="btn btn-outline text-[#00FFFF]">SEND ME</button>
+
+        </form>
+      </div>
+
+      <div>
+
       </div>
     </div>
   );

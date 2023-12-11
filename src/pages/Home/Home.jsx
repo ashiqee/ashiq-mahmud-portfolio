@@ -6,6 +6,7 @@ import Banner from "./Banner";
 import { useState } from "react";
 import Portfolio from "../Portfolio/Portfolio";
 import "./home.scss";
+import ContactMe from './../ContactMe/ContactMe';
 
 const Home = () => {
   const [activePage, setActivePage] = useState("home");
@@ -21,6 +22,8 @@ const Home = () => {
       handlePageChange("skills");
     } else if (e.deltaY > 0 && activePage !== "projects") {
       handlePageChange("projects");
+    } else if (e.deltaY > 0 && activePage !== "contact") {
+      handlePageChange("contact");
     } else if (e.deltaY < 0 && activePage !== "home") {
       handlePageChange("home");
     }
@@ -134,6 +137,29 @@ const Home = () => {
                 </h3>
               </div>
             </Link>
+            <Link
+              onClick={() => handlePageChange("contact")}
+              className={
+                activePage === "contact"
+                  ? `${activeCSS}`
+                  : `${menuNormalCSS}`
+              }
+            >
+              <div className="flex items-center gap-2">
+                <span
+                  className={
+                    activePage === "projects"
+                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90 text-black text-xl"
+                      : "bg-gray-600 bg-opacity-50 w-12 p-4  hover:bg-[#00FFFF]  hover:text-black text-xl"
+                  }
+                >
+                  <FaSkiing />
+                </span>
+                <h3 className="hover:scale-x-110 mx-auto  transition-transform transform">
+                  CONTACT
+                </h3>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -162,6 +188,15 @@ const Home = () => {
         </section>
 
         <section>{activePage === "skills" && <Portfolio />}</section>
+
+
+        <section>
+          {activePage === "contact" && (
+            <div data-aos="flip-left" data-aos-offset="200" data-aos-delay="50">
+              <ContactMe />
+            </div>
+          )}
+        </section>
       </div>
 
       {/* <button
