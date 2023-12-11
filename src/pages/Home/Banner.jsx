@@ -1,4 +1,5 @@
 import profileImg from "../../assets/images/ashiq.png";
+import TextHover from "../../Components/Text/TextHover";
 
 import Navbar from "../NavBar/Navbar";
 const Banner = () => {
@@ -22,7 +23,10 @@ const Banner = () => {
         </div>
         <div className="space-y-6">
           <h2 className="text-2xl  uppercase font-bold">
-            Ashek Mahmud <span className="text-[#00FFFF]">Ashik</span>
+            Ashek Mahmud{" "}
+            <span className="text-[#00FFFF]">
+              <TextHover>Ashik</TextHover>
+            </span>
           </h2>
           <h2 className="text-6xl font-extrabold">
             <span className="text-[#00FFFF]">MERN</span> STACK <br /> DEVELOPER
