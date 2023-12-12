@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 
 const ProjectCard = ({ project }) => {
-    const { title, description, technologies, image, link, id } = project;
+    const { title, description, technologies, image, link, id, githubLink } = project;
     return (
 
 
-        <div className="card w-96 glass">
+        <div className="card md:w-96  glass">
             <figure><img className="h-60 w-full" src={image} alt="car!" /></figure>
             <div className="card-body">
                 <h2 className="card-title text-[#00FFFF]">{title}</h2>
@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
                     <Link target="_blank" to={link}>
                         <button className="btn btn-outline text-[#00FFFF]">Live Link</button>
                     </Link>
-                    <Link to={`/projectDetails/${id}`}>
+                    <Link to={githubLink}>
                         <button className="btn btn-primary">Project Details!</button>
                     </Link>
                 </div>

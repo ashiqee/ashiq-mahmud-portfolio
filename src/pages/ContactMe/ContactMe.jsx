@@ -47,17 +47,17 @@ const ContactMe = () => {
         </form>
       </div>
 
-      <div className="space-y-5 p-5 md:p-10">
-        <p>I am available .Connect with me vai  <br />
+      <div className="space-y-5 p-5 mb-20 text-sm md:text-xl md:p-10">
+        <p >I am available .Connect with me via  <br />
           <b className="text-[#00FFFF]">phone/whatsapp:</b> or  <b className="text-[#00FFFF]">email:</b>
         </p>
-        <span className="flex items-center gap-2 text-2xl">
+        <span className="flex items-center gap-2 md:text-2xl">
           <span className="text-[#00FFFF]"><FaMobile /></span>  <h3>+880-01614-654397</h3>
         </span>
-        <span className="flex items-center gap-2 text-2xl">
+        <span className="flex items-center gap-2 md:text-2xl">
           <span className="text-green-500"> <FaWhatsapp /></span>  <h3>+880-01614-654397</h3>
         </span>
-        <span className="flex items-center gap-2 text-2xl">
+        <span className="flex items-center gap-2 md:text-2xl">
           <span className="text-red-400"> <CiMail /></span>  <h3>aashekmahmud@gmail.com</h3>
         </span>
 

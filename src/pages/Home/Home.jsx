@@ -46,7 +46,7 @@ const Home = () => {
       className="bg-gradient-to-r  text-white from-[#0c0c1d] to-slate-700"
     >
       {/* sidebar  */}
-      <div className="fixed right-0  lg:block z-40">
+      <div className="fixed right-0 bottom-0 md:top-0 lg:block z-40">
         <div className=" my-2 mx-10 ">
           <div
             className="flex

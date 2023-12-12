@@ -35,7 +35,7 @@ const Banner = ({ handlePageChange }) => {
         {/* <div className="md:flex gap-5 absolute hidden top-0 py-10 text-4xl  ">
           <Navbar />
         </div> */}
-        <div className="space-y-6 mt-5 md:mt-0 z-20 ">
+        <div className="space-y-6 mb-20 mt-5 md:mt-0 z-20 ">
           <h2 className="text-2xl  uppercase font-bold">
             Ashek Mahmud{" "}
             <span className="text-[#00FFFF]">
@@ -51,7 +51,7 @@ const Banner = ({ handlePageChange }) => {
               GET RESUME
             </button>
 
-            <button onClick={() => handlePageChange("contact")} className="btn text-[#00FFFF] btn-outline">
+            <button onClick={() => handlePageChange("contact")} className="btn  text-[#00FFFF] btn-outline">
               CONTACT ME
             </button>
           </div>
@@ -62,7 +62,7 @@ const Banner = ({ handlePageChange }) => {
 
           className="z-10"
         >
-          <img className="md:h-screen h-[600px] w-full mx-auto " src={profileImg} alt="" />
+          <img className="md:h-screen  h-[600px] w-full mx-auto " src={profileImg} alt="" />
         </div>
       </div>
     </div>
