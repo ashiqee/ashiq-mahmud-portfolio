@@ -7,6 +7,8 @@ import { useState } from "react";
 import Portfolio from "../Portfolio/Portfolio";
 import "./home.scss";
 import ContactMe from './../ContactMe/ContactMe';
+import Navbar from "../NavBar/Navbar";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
   const [activePage, setActivePage] = useState("home");
@@ -29,20 +31,24 @@ const Home = () => {
     }
   };
 
-  const activeCSS = `border text-[#00FFFF]  rotate-90  my-12 rounded-md`;
-  const menuNormalCSS = ` border border-red-200 pr-4  hover:text-[#00FFFF]  rounded-md`;
+  // const activeCSS = `border text-[#00FFFF]  rotate-90  my-12 rounded-md`;
+  const activeCSS = `md:border border-[#00FFFF] text-[#00FFFF] pr-2  my-1 rounded-md`;
+  const menuNormalCSS = ` md:border pr-2 hover:border-[#00FFFF] hover:text-[#00FFFF]  rounded-md`;
+  const iconActiveCSS = `bg-opacity- p-2 bg-[#00FFFF]   rounded-md text-black text-xl`;
+  const iconNorCss = "bg-gray-600 bg-opacity-50 rounded-md p-2  hover:bg-[#00FFFF]  hover:text-black text-xl";
+  const textCSS = `hover:scale-x-110 mx-auto hidden md:block transition-transform transform`
   return (
     <div
       onWheel={handleScroll}
       className="bg-gradient-to-r  text-white from-[#0c0c1d] to-slate-700"
     >
       {/* sidebar  */}
-      <div className="fixed right-0 hidden lg:block z-40">
-        <div className=" my-40 ">
+      <div className="fixed right-0  lg:block z-40">
+        <div className=" my-2 mx-10 ">
           <div
-            className="grid 
+            className="flex
                  items-center 
-                 justify-center  lg:w-48  text-white   
+                 justify-center    text-white   
                  gap-2"
           >
             <Link
@@ -57,13 +63,13 @@ const Home = () => {
                 <span
                   className={
                     activePage === "home"
-                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90 rounded-md text-black text-xl"
-                      : "bg-gray-600 bg-opacity-50 w-12 p-4  hover:bg-[#00FFFF]  hover:text-black text-xl"
+                      ? `${iconActiveCSS}`
+                      : `${iconNorCss}`
                   }
                 >
                   <FaHome />
                 </span>
-                <h3 className="hover:scale-x-110  mx-auto transition-transform transform">
+                <h3 className={`${textCSS}`}>
                   HOME
                 </h3>
               </div>
@@ -80,13 +86,13 @@ const Home = () => {
                 <span
                   className={
                     activePage === "about"
-                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90 text-black text-xl"
-                      : "bg-gray-600 bg-opacity-50 w-12 p-4  hover:bg-[#00FFFF]  hover:text-black text-xl"
+                      ? `${iconActiveCSS}`
+                      : `${iconNorCss}`
                   }
                 >
                   <FcAbout />
                 </span>
-                <h3 className="hover:scale-x-110 mx-auto transition-transform transform">
+                <h3 className={`${textCSS}`}>
                   ABOUT
                 </h3>
               </div>
@@ -103,13 +109,13 @@ const Home = () => {
                 <span
                   className={
                     activePage === "skills"
-                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90  text-black text-xl"
-                      : "bg-gray-600 bg-opacity-50 w-12 p-4  hover:bg-[#00FFFF]  hover:text-black text-xl"
+                      ? `${iconActiveCSS}`
+                      : `${iconNorCss}`
                   }
                 >
                   <FaSkiing />
                 </span>
-                <h3 className="hover:scale-x-110 mx-auto  transition-transform transform">
+                <h3 className={`${textCSS}`}>
                   SKILLS
                 </h3>
               </div>
@@ -126,13 +132,13 @@ const Home = () => {
                 <span
                   className={
                     activePage === "projects"
-                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90 text-black text-xl"
-                      : "bg-gray-600 bg-opacity-50 w-12 p-4  hover:bg-[#00FFFF]  hover:text-black text-xl"
+                      ? `${iconActiveCSS}`
+                      : `${iconNorCss}`
                   }
                 >
                   <FaSkiing />
                 </span>
-                <h3 className="hover:scale-x-110 mx-auto  transition-transform transform">
+                <h3 className={`${textCSS}`}>
                   PROJECTS
                 </h3>
               </div>
@@ -149,13 +155,13 @@ const Home = () => {
                 <span
                   className={
                     activePage === "projects"
-                      ? "bg-opacity-50 w-12 p-4 bg-[#00FFFF] -rotate-90 text-black text-xl"
-                      : "bg-gray-600 bg-opacity-50 w-12 p-4  hover:bg-[#00FFFF]  hover:text-black text-xl"
+                      ? `${iconActiveCSS}`
+                      : `${iconNorCss}`
                   }
                 >
                   <FaSkiing />
                 </span>
-                <h3 className="hover:scale-x-110 mx-auto  transition-transform transform">
+                <h3 className={`${textCSS}`}>
                   CONTACT
                 </h3>
               </div>
@@ -163,14 +169,16 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <div className="fixed flex flex-col gap-5 z-50 p-2  ml-2  top-0 py-5 text-xl md:text-4xl  ">
+        <Navbar />
+      </div>
       {/* main Home Page  */}
       <div className="overflow-y-scroll overscroll-none ">
         <section>
           {activePage === "home" && (
             <div
               className="-z-50"
-              data-aos="flip-right"
+              data-aos="flip-up"
               data-aos-offset="200" data-aos-delay="50"
 
             >
@@ -186,8 +194,15 @@ const Home = () => {
             </div>
           )}
         </section>
+        <section>
+          {activePage === "skills" && (
+            <div data-aos="flip-left" data-aos-offset="200" data-aos-delay="50">
+              <Skills />
+            </div>
+          )}
+        </section>
 
-        <section>{activePage === "skills" && <Portfolio />}</section>
+        {/* <section>{activePage === "skills" && <Portfolio />}</section> */}
 
 
         <section>

@@ -68,17 +68,20 @@ const AboutUs = () => {
   return (
     <div
       id="aboutUs"
-      className="min-h-screen p-5 items-center justify-between mx-auto container"
+      className="min-h-screen p-12 items-center justify-between mx-auto container"
     >
+
+
+
       <div className="grid grid-cols-1 lg:grid-cols-3  ">
-        <div className="text-right  lg:py-28 lg:mr-5">
+        <div className="text-right md:py-5 hidden md:block  lg:py-16 lg:mr-5">
           <img
-            className="rounded-e-md h-[430px]"
+            className="rounded-md h-[430px]"
             src="https://cadmore.media/wp-content/uploads/2022/05/digital-web-designer-900x900-1-495x400.jpg"
             alt=""
           />
         </div>
-        <div className="col-span-2 lg:py-28 py-5 space-y-6">
+        <div className="col-span-2  md:py-5 lg:py-16 py-2  space-y-6">
           <div className="space-y-6">
             <h2 className="text-4xl uppercase">About Me</h2>
             <p className="text-justify">

@@ -30,7 +30,7 @@ const ContactMe = () => {
   }
   return (
     <div className="min-h-screen container md:gap-10 p-10 mx-auto grid md:grid-cols-2 grid-cols-1  items-center">
-      <div className="space-y-3">
+      <div className="space-y-3 p-5 md:p-10">
         <h2 className="text-3xl uppercase">Contact <span className="text-[#00FFFF]">ME</span></h2>
 
         <form className="space-y-2 " ref={form} onSubmit={handleSubmit}>
@@ -46,15 +46,15 @@ const ContactMe = () => {
         </form>
       </div>
 
-      <div className="space-y-5">
+      <div className="space-y-5 p-5 md:p-10">
         <p>I am available .Connect with me vai  <br />
           <b className="text-[#00FFFF]">phone/whatsapp:</b> or  <b className="text-[#00FFFF]">email:</b>
         </p>
         <span className="flex items-center gap-2 text-2xl">
-          <span className="text-[#00FFFF]"><FaMobile /></span>  <h3>+880-01614-654394</h3>
+          <span className="text-[#00FFFF]"><FaMobile /></span>  <h3>+880-01614-654397</h3>
         </span>
         <span className="flex items-center gap-2 text-2xl">
-          <span className="text-green-500"> <FaWhatsapp /></span>  <h3>+880-01614-654394</h3>
+          <span className="text-green-500"> <FaWhatsapp /></span>  <h3>+880-01614-654397</h3>
         </span>
         <span className="flex items-center gap-2 text-2xl">
           <span className="text-red-400"> <CiMail /></span>  <h3>aashekmahmud@gmail.com</h3>

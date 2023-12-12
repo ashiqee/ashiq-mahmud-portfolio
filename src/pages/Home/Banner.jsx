@@ -32,9 +32,9 @@ const Banner = ({ handlePageChange }) => {
       </div>
 
       <div className="min-h-screen  md:flex flex md:flex-row flex-col-reverse items-center justify-start md:justify-between mx-auto container">
-        <div className="md:flex gap-5 absolute hidden top-0 py-10 text-4xl  ">
+        {/* <div className="md:flex gap-5 absolute hidden top-0 py-10 text-4xl  ">
           <Navbar />
-        </div>
+        </div> */}
         <div className="space-y-6 mt-5 md:mt-0 z-20 ">
           <h2 className="text-2xl  uppercase font-bold">
             Ashek Mahmud{" "}
