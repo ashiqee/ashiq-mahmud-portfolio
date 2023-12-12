@@ -73,7 +73,7 @@ const AboutUs = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3  ">
         <div className="text-right  lg:py-28 lg:mr-5">
           <img
-            className="rounded-e-md "
+            className="rounded-e-md h-[430px]"
             src="https://cadmore.media/wp-content/uploads/2022/05/digital-web-designer-900x900-1-495x400.jpg"
             alt=""
           />

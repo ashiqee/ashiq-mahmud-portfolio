@@ -174,7 +174,7 @@ const Home = () => {
               data-aos-offset="200" data-aos-delay="50"
 
             >
-              <Banner />
+              <Banner handlePageChange={handlePageChange} />
             </div>
           )}
         </section>

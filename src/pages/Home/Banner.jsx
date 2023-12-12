@@ -4,7 +4,7 @@ import TextHover from "../../Components/Text/TextHover";
 
 import Navbar from "../NavBar/Navbar";
 const resumePdf_URL = "http://localhost:5173/Ashik_Mahmud_Resume.pdf"
-const Banner = () => {
+const Banner = ({ handlePageChange }) => {
 
 
   const downloadPdf = (url) => {
@@ -51,7 +51,7 @@ const Banner = () => {
               GET RESUME
             </button>
 
-            <button className="btn text-[#00FFFF] btn-outline">
+            <button onClick={() => handlePageChange("contact")} className="btn text-[#00FFFF] btn-outline">
               CONTACT ME
             </button>
           </div>
