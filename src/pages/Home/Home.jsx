@@ -1,4 +1,7 @@
-import { FaArrowAltCircleUp, FaHome, FaSkiing } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
+import { RiContactsFill } from "react-icons/ri";
+import { GrProjects } from "react-icons/gr";
 import { FcAbout } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
@@ -113,7 +116,7 @@ const Home = () => {
                       : `${iconNorCss}`
                   }
                 >
-                  <FaSkiing />
+                  <GiSkills />
                 </span>
                 <h3 className={`${textCSS}`}>
                   SKILLS
@@ -136,7 +139,7 @@ const Home = () => {
                       : `${iconNorCss}`
                   }
                 >
-                  <FaSkiing />
+                  <GrProjects />
                 </span>
                 <h3 className={`${textCSS}`}>
                   PROJECTS
@@ -154,12 +157,12 @@ const Home = () => {
               <div className="flex items-center gap-2">
                 <span
                   className={
-                    activePage === "projects"
+                    activePage === "contact"
                       ? `${iconActiveCSS}`
                       : `${iconNorCss}`
                   }
                 >
-                  <FaSkiing />
+                  <RiContactsFill />
                 </span>
                 <h3 className={`${textCSS}`}>
                   CONTACT
@@ -173,13 +176,13 @@ const Home = () => {
         <Navbar />
       </div>
       {/* main Home Page  */}
-      <div className="overflow-y-scroll overscroll-none ">
+      <div className=" ">
         <section>
           {activePage === "home" && (
             <div
               className="-z-50"
-              data-aos="flip-up"
-              data-aos-offset="200" data-aos-delay="50"
+            // data-aos="flip-up"
+            // data-aos-offset="200" data-aos-delay="50"
 
             >
               <Banner handlePageChange={handlePageChange} />
@@ -189,25 +192,31 @@ const Home = () => {
 
         <section>
           {activePage === "about" && (
-            <div data-aos="flip-left" data-aos-offset="200" data-aos-delay="50">
+            <div
+            //  data-aos="flip-left" data-aos-offset="200" data-aos-delay="50"
+            >
               <AboutUs />
             </div>
           )}
         </section>
         <section>
           {activePage === "skills" && (
-            <div data-aos="flip-left" data-aos-offset="200" data-aos-delay="50">
+            <div
+            //  data-aos="flip-left" data-aos-offset="200" data-aos-delay="50"
+            >
               <Skills />
             </div>
           )}
         </section>
 
-        {/* <section>{activePage === "skills" && <Portfolio />}</section> */}
+        <section>{activePage === "projects" && <Portfolio />}</section>
 
 
         <section>
           {activePage === "contact" && (
-            <div data-aos="flip-left" data-aos-offset="200" data-aos-delay="50">
+            <div
+            //  data-aos="flip-left" data-aos-offset="200" data-aos-delay="50"
+            >
               <ContactMe />
             </div>
           )}

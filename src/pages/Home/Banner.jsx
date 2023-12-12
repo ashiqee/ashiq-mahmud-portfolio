@@ -2,8 +2,8 @@
 import profileImg from "../../assets/images/ashiq.png";
 import TextHover from "../../Components/Text/TextHover";
 
-import Navbar from "../NavBar/Navbar";
-const resumePdf_URL = "http://localhost:5173/Ashik_Mahmud_Resume.pdf"
+
+const resumePdf_URL = "https://ashik-mahmud.web.app/Ashik_Mahmud_Resume.pdf"
 const Banner = ({ handlePageChange }) => {
 
 
@@ -55,14 +55,12 @@ const Banner = ({ handlePageChange }) => {
               CONTACT ME
             </button>
           </div>
-          <div className="flex md:hidden gap-5 absolute  py-5 text-4xl  ">
-            <Navbar />
-          </div>
+
         </div>
         <div
           data-aos="flip-fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-          className="-z-50"
+
+          className="z-10"
         >
           <img className="md:h-screen h-[600px] w-full mx-auto " src={profileImg} alt="" />
         </div>

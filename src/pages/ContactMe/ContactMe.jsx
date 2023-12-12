@@ -6,6 +6,7 @@ import { CiMail } from "react-icons/ci";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
+import Footer from "../../Components/Footer/Footer";
 
 const ContactMe = () => {
   const form = useRef()
@@ -63,6 +64,7 @@ const ContactMe = () => {
 
 
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "title": "Blood Donation Management System",
+      
+      "description": "The Blood Donation Management System is a full-stack MERN (MongoDB, Express.js, React, Node.js) application designed to streamline and enhance blood donation activities.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Material Tailwind","Material UI"],
+      "image": "https://cdn.kwork.com/files/portfolio/t0/34/1678641c76253dc79c0f0abb30bb740bd676b9ec-1701682135.webp",
+      "link":"https://blood-donate-e576a.web.app/",
+      "githubLink": ""
+    },
+    {
+      "id": 2,
+      "title": "Tech-E Event Management App",
+      "description": "This project is designed to help you manage and organize tech events seamlessly and user-friendly UI.",
+      "technologies": ["React", "Material Tailwind", "Tailwind CSS", "AOS", "Firebase"],
+      "image": "https://cdn.kwork.com/files/portfolio/t0/68/aa606f41e36cfae1333dae038153bb1ceb09f0f9-1701683772.webp",
+      "link":"https://tech-e-auth.web.app/",
+      "githubLink": ""
+    },
+    {
+      "id": 3,
+      "title": "Buet Employer Cricket Club",
+      "description": "This website is a React-based platform designed for the cricket enthusiasts of the Buet Employer community.",
+      "technologies": ["React", "Firebase", "Tailwind CSS"],
+      "image": "https://cdn.kwork.com/files/portfolio/t0/50/9f4deb8c02fe2bf933f540a1d094dee1d30d15c2-1701683773.webp",
+      "link":"https://buetcricket.web.app/",
+      "githubLink": ""
+    }
+    
+  ]
+  
