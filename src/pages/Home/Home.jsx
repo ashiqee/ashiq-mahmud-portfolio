@@ -9,7 +9,7 @@ import Banner from "./Banner";
 import { useState } from "react";
 import Portfolio from "../Portfolio/Portfolio";
 import "./home.scss";
-import ContactMe from './../ContactMe/ContactMe';
+import ContactMe from "./../ContactMe/ContactMe";
 import Navbar from "../NavBar/Navbar";
 import Skills from "../Skills/Skills";
 
@@ -38,15 +38,16 @@ const Home = () => {
   const activeCSS = `md:border border-[#00FFFF] text-[#00FFFF] pr-2  my-1 rounded-md`;
   const menuNormalCSS = ` md:border pr-2 hover:border-[#00FFFF] hover:text-[#00FFFF]  rounded-md`;
   const iconActiveCSS = `bg-opacity- p-2 bg-[#00FFFF]   rounded-md text-black text-xl`;
-  const iconNorCss = "bg-gray-600 bg-opacity-50 rounded-md p-2  hover:bg-[#00FFFF]  hover:text-black text-xl";
-  const textCSS = `hover:scale-x-110 mx-auto hidden md:block transition-transform transform`
+  const iconNorCss =
+    "bg-gray-600 bg-opacity-50 rounded-md p-2  hover:bg-[#00FFFF]  hover:text-black text-xl";
+  const textCSS = `hover:scale-x-110 mx-auto hidden md:block transition-transform transform`;
   return (
     <div
       onWheel={handleScroll}
       className="bg-gradient-to-r  text-white from-[#0c0c1d] to-slate-700"
     >
       {/* sidebar  */}
-      <div className="fixed right-0 bottom-0 md:top-0 lg:block z-40">
+      <div className="fixed right-0 bottom-0 md:top-0 lg:block ">
         <div className=" my-2 mx-10 ">
           <div
             className="flex
@@ -57,32 +58,24 @@ const Home = () => {
             <Link
               onClick={() => handlePageChange("home")}
               className={
-                activePage === "home"
-                  ? `${activeCSS}`
-                  : `${menuNormalCSS}`
+                activePage === "home" ? `${activeCSS}` : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
                 <span
                   className={
-                    activePage === "home"
-                      ? `${iconActiveCSS}`
-                      : `${iconNorCss}`
+                    activePage === "home" ? `${iconActiveCSS}` : `${iconNorCss}`
                   }
                 >
                   <FaHome />
                 </span>
-                <h3 className={`${textCSS}`}>
-                  HOME
-                </h3>
+                <h3 className={`${textCSS}`}>HOME</h3>
               </div>
             </Link>
             <Link
               onClick={() => handlePageChange("about")}
               className={
-                activePage === "about"
-                  ? `${activeCSS}`
-                  : `${menuNormalCSS}`
+                activePage === "about" ? `${activeCSS}` : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
@@ -95,17 +88,13 @@ const Home = () => {
                 >
                   <FcAbout />
                 </span>
-                <h3 className={`${textCSS}`}>
-                  ABOUT
-                </h3>
+                <h3 className={`${textCSS}`}>ABOUT</h3>
               </div>
             </Link>
             <Link
               onClick={() => handlePageChange("skills")}
               className={
-                activePage === "skills"
-                  ? `${activeCSS}`
-                  : `${menuNormalCSS}`
+                activePage === "skills" ? `${activeCSS}` : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
@@ -118,17 +107,13 @@ const Home = () => {
                 >
                   <GiSkills />
                 </span>
-                <h3 className={`${textCSS}`}>
-                  SKILLS
-                </h3>
+                <h3 className={`${textCSS}`}>SKILLS</h3>
               </div>
             </Link>
             <Link
               onClick={() => handlePageChange("projects")}
               className={
-                activePage === "projects"
-                  ? `${activeCSS}`
-                  : `${menuNormalCSS}`
+                activePage === "projects" ? `${activeCSS}` : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
@@ -141,17 +126,13 @@ const Home = () => {
                 >
                   <GrProjects />
                 </span>
-                <h3 className={`${textCSS}`}>
-                  PROJECTS
-                </h3>
+                <h3 className={`${textCSS}`}>PROJECTS</h3>
               </div>
             </Link>
             <Link
               onClick={() => handlePageChange("contact")}
               className={
-                activePage === "contact"
-                  ? `${activeCSS}`
-                  : `${menuNormalCSS}`
+                activePage === "contact" ? `${activeCSS}` : `${menuNormalCSS}`
               }
             >
               <div className="flex items-center gap-2">
@@ -164,9 +145,7 @@ const Home = () => {
                 >
                   <RiContactsFill />
                 </span>
-                <h3 className={`${textCSS}`}>
-                  CONTACT
-                </h3>
+                <h3 className={`${textCSS}`}>CONTACT</h3>
               </div>
             </Link>
           </div>
@@ -179,12 +158,7 @@ const Home = () => {
       <div className=" ">
         <section>
           {activePage === "home" && (
-            <div
-              className="-z-50"
-            // data-aos="flip-up"
-            // data-aos-offset="200" data-aos-delay="50"
-
-            >
+            <div>
               <Banner handlePageChange={handlePageChange} />
             </div>
           )}
@@ -211,7 +185,6 @@ const Home = () => {
 
         <section>{activePage === "projects" && <Portfolio />}</section>
 
-
         <section>
           {activePage === "contact" && (
             <div
@@ -223,12 +196,7 @@ const Home = () => {
         </section>
       </div>
 
-      {/* <button
-        onClick={() => handlePageChange("home")}
-        className="absolute text-3xl bottom-2 right-0 p-4"
-      >
-        <FaArrowAltCircleUp />
-      </button> */}
+      {/* Main Home Page Two  */}
     </div>
   );
 };
