@@ -41,6 +41,8 @@ const Home = () => {
   const iconNorCss =
     "bg-gray-600 bg-opacity-50 rounded-md p-2  hover:bg-[#00FFFF]  hover:text-black text-xl";
   const textCSS = `hover:scale-x-110 mx-auto hidden md:block transition-transform transform`;
+  
+  
   return (
     <div
       onWheel={handleScroll}

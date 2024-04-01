@@ -31,12 +31,12 @@ const Banner = ({ handlePageChange }) => {
           <Navbar />
         </div> */}
         <div className="space-y-6 mb-20 mt-5 md:mt-0 z-20 ">
-          {/* <h2 className="text-2xl  uppercase font-bold">
+          <h2 className="text-2xl block md:hidden uppercase font-bold">
             Ashek Mahmud{" "}
             <span className="text-[#00FFFF]">
               <TextHover>Ashik</TextHover>
             </span>
-          </h2> */}
+          </h2>
           <h2 className="md:text-6xl text-5xl font-extrabold">
             <span className="text-[#00FFFF]">MERN</span> STACK <br /> DEVELOPER
           </h2>
