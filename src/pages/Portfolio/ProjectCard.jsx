@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
     return (
 
 
-        <div className="card md:w-96  glass">
+        <div className="card md:w-96 z-20 md:z-40 glass">
             <figure><img className="h-60 w-full" src={image} alt="car!" /></figure>
             <div className="card-body">
                 <h2 className="card-title text-[#00FFFF]">{title}</h2>
