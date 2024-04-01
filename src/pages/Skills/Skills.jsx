@@ -67,7 +67,7 @@ const skillData2 = [
 
 const Skills = () => {
   return (
-    <div className="container mx-auto pt-20 my-auto min-h-screen">
+    <div id="skills" className="container mx-auto text-white pt-20 my-auto min-h-screen">
       <div className="text-center  ">
         <div className="pb-10 space-y-4">
           <h2 className="text-3xl">

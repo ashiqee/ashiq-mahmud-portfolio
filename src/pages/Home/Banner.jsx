@@ -13,7 +13,7 @@ const Banner = ({ handlePageChange }) => {
     aTag.remove();
   };
   return (
-    <div className="overscroll-none">
+    <div className="overscroll-none text-white " id="home">
       <div className="absolute z-0 text-9xl font-extrabold opacity-10 w-full bottom-0">
         <div className="relative  flex overflow-x-hidden">
           <div className="py-12 animate-marquee whitespace-nowrap">
@@ -31,12 +31,12 @@ const Banner = ({ handlePageChange }) => {
           <Navbar />
         </div> */}
         <div className="space-y-6 mb-20 mt-5 md:mt-0 z-20 ">
-          <h2 className="text-2xl  uppercase font-bold">
+          {/* <h2 className="text-2xl  uppercase font-bold">
             Ashek Mahmud{" "}
             <span className="text-[#00FFFF]">
               <TextHover>Ashik</TextHover>
             </span>
-          </h2>
+          </h2> */}
           <h2 className="md:text-6xl text-5xl font-extrabold">
             <span className="text-[#00FFFF]">MERN</span> STACK <br /> DEVELOPER
           </h2>
@@ -50,12 +50,18 @@ const Banner = ({ handlePageChange }) => {
               GET RESUME
             </button>
 
-            <button
+            {/* <button
               onClick={() => handlePageChange("contact")}
               className="btn  text-[#00FFFF] btn-outline"
             >
               CONTACT ME
-            </button>
+            </button> */}
+            <a
+              href="#Contact"
+              className="btn  text-[#00FFFF] btn-outline"
+            >
+              CONTACT ME
+            </a>
           </div>
         </div>
 
@@ -70,7 +76,7 @@ const Banner = ({ handlePageChange }) => {
             alt=""
           /> */}
 
-          <img className="h-96 " src={profileImg} />
+          <img className="h-96 pr-20" src={profileImg} />
         </div>
       </div>
     </div>

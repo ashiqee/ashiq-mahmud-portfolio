@@ -2,6 +2,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  
   return (
     <>
       <Link data-aos="fade-down-left" target="_blank" to="https://github.com/ashiqee">

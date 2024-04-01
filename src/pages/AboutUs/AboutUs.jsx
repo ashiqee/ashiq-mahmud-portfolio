@@ -69,7 +69,7 @@ const AboutUs = () => {
   return (
     <div
       id="aboutUs"
-      className="min-h-screen p-12 items-center  justify-between mx-auto container"
+      className="min-h-screen text-white p-12 items-center  justify-between mx-auto container"
     >
 
 

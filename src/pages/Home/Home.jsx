@@ -10,7 +10,7 @@ import { useState } from "react";
 import Portfolio from "../Portfolio/Portfolio";
 import "./home.scss";
 import ContactMe from "./../ContactMe/ContactMe";
-import Navbar from "../NavBar/Navbar";
+import Navbar from "../NavBar/LinkNavbar";
 import Skills from "../Skills/Skills";
 
 const Home = () => {
