@@ -1,6 +1,16 @@
 [
     {
       "id": 1,
+      "title": "ExpoElite Property Selling & Renting Full Stact Website ",
+      
+      "description": "I’m happy to share this ExpoElite –Property Selling and Exhibition Platform project I worked on. Our platform, enhanced by Firebase authentication and Role-Based Access Control, provide a better user experience.",
+      "technologies": ["Next.js", "Tailwind CSS", "Firebase", "Next UI", "Material Tailwind","Stripe","mongoose","jsonwebtoken"],
+      "image": "https://i.ibb.co/gFVSc9j/Expo-Elite.png",
+      "link":"https://expo-elite-dev.vercel.app/",
+      "githubLink": "https://github.com/nerualninjas/ExpoElite"
+    },
+    {
+      "id": 2,
       "title": "Blood Donation Management System",
       
       "description": "The Blood Donation Management System is a full-stack MERN (MongoDB, Express.js, React, Node.js) application designed to streamline and enhance blood donation activities.",
@@ -10,7 +20,7 @@
       "githubLink": "https://github.com/ashiqee/blood-donation-full-stack-client"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Tech-E Event Management App",
       "description": "This project is designed to help you manage and organize tech events seamlessly and user-friendly UI.",
       "technologies": ["React", "Material Tailwind", "Tailwind CSS", "AOS", "Firebase"],
@@ -19,7 +29,7 @@
       "githubLink": "https://github.com/ashiqee/event-management-react-project"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Buet Employer Cricket Club",
       "description": "This website is a React-based platform designed for the cricket enthusiasts of the Buet Employer community.",
       "technologies": ["React", "Firebase", "Tailwind CSS"],

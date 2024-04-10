@@ -98,7 +98,7 @@ const AboutUs = () => {
           <Tabs id="custom-animation" defaultIndex='mainSkills' value="html">
             <TabsHeader className="bg-[#00FFFF] w-96">
               {data.map(({ label, value }) => (
-                <Tab key={value} value={value}>
+                <Tab key={value}  value={value}>
                   {label}
                 </Tab>
               ))}

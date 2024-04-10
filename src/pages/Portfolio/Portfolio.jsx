@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import TextHover from "../../Components/Text/TextHover";
 import axios from "axios";
 import ProjectCard from "./projectCard";
+import { Link } from "react-router-dom";
 
 
 const Portfolio = () => {
@@ -29,9 +30,13 @@ const Portfolio = () => {
             </div>
             <div className="grid grid-cols-1 justify-center mb-10 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
-                    data.map(project => <ProjectCard key={project.id} project={project} ></ProjectCard>)
+                    data.slice(0,3).map(project => <ProjectCard key={project.id} project={project} ></ProjectCard>)
                 }
+                  
             </div>
+            <Link className="flex items-center justify-center" to='/projects'>
+                        <button className="btn text-center btn-primary">More Projects</button>
+                    </Link>
         </div>
     );
 };
