@@ -6,7 +6,7 @@ import { CiMail } from "react-icons/ci";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
-import Footer from "../../Components/Footer/Footer";
+
 
 const ContactMe = () => {
   const form = useRef()
@@ -30,7 +30,7 @@ const ContactMe = () => {
       });
   }
   return (
-    <div id="Contact" className="min-h-screen container text-white md:gap-10 p-10 mx-auto grid md:grid-cols-2 grid-cols-1  items-center">
+    <div id="Contact" className=" container text-white md:gap-10 p-10 mx-auto grid md:grid-cols-2 grid-cols-1  items-center">
       <div className="space-y-3 p-5 md:p-10">
         <h2 className="text-3xl uppercase">Contact <span className="text-[#00FFFF]">ME</span></h2>
 
@@ -64,7 +64,7 @@ const ContactMe = () => {
 
 
       </div>
-      <Footer />
+      
     </div>
   );
 };

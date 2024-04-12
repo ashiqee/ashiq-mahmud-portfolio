@@ -2,9 +2,9 @@
 
 const Footer = () => {
     return (
-        <div className="fixed bottom-10 md:bottom-0  mx-auto text-center p-2">
+        <div className="   text-white text-center py-5 p-2">
             <p className="text-sm">
-                Copyright © 2023 Ashik Mahmud. All Rights Reserved</p>
+                Copyright © 2024 Ashek Mahmud Ashik. All Rights Reserved</p>
         </div>
     );
 };

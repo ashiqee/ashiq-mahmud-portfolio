@@ -21,12 +21,14 @@ const HomePage = () => {
             <div className="fixed flex flex-col gap-5 z-50 p-2  ml-2 right-0 text-white  top-10 py-5 text-xl md:text-4xl  ">
         <Navbar />
       </div>
-            <Banner/>
+           <div className='space-y-10'>
+           <Banner/>
             <AboutUs/>
             <Skills/>
             <Portfolio/>
             <ContactMe/>
             
+           </div>
             
         </div>
     );

@@ -6,6 +6,7 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
+import { FcNext } from "react-icons/fc";
 import { SiMongodb, SiExpress } from "react-icons/si";
 
 
@@ -35,6 +36,10 @@ const AboutUs = () => {
 
             <FaNodeJs /><progress className="progress  progress-success w-full md:w-56" value={81} max="100"></progress>
           </span>
+          <span className="flex gap-2 items-center text-3xl text-green-800">
+
+            <img className="w-8" src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/NextJS-Dark.svg" /><progress className="progress  progress-primary w-full md:w-56" value={81} max="100"></progress>
+          </span>
         </div>
 
 
@@ -49,9 +54,9 @@ const AboutUs = () => {
       desc: <>
         <div>
           <h2 className="text-md text-white ">
-            BSc in CSE - <span className="text-gray-300"> Canadian University of Bangladesh</span>
-            <br />
-            2022
+          Bachelor of Science in Computer Science and Engineering (B.Sc in CSE)  <br />2022<br/> <span className="text-gray-300"> Canadian University of Bangladesh</span>
+           
+            
           </h2>
         </div>
 
@@ -69,15 +74,15 @@ const AboutUs = () => {
   return (
     <div
       id="aboutUs"
-      className="min-h-screen text-white p-12 items-center  justify-between mx-auto container"
+      className=" text-white items-center px-3 md:px-0  justify-between mx-auto container"
     >
 
 
 
       <div className="grid grid-cols-1 lg:grid-cols-3  ">
-        <div className="text-right md:py-5 hidden md:block  lg:py-10 lg:mr-5">
+        <div className="text-right md:py-5 hidden md:block  lg:py-20 lg:mr-5">
           <img
-            className="rounded-md h-[430px]"
+            className="rounded-md h-[460px]"
             src="https://cadmore.media/wp-content/uploads/2022/05/digital-web-designer-900x900-1-495x400.jpg"
             alt=""
           />
@@ -95,10 +100,10 @@ const AboutUs = () => {
               creativity."
             </p>
           </div>
-          <Tabs id="custom-animation" defaultIndex='mainSkills' value="html">
+          <Tabs id="custom-animation" defaultIndex='mainSkills' value="mainSkills">
             <TabsHeader className="bg-[#00FFFF] w-96">
               {data.map(({ label, value }) => (
-                <Tab key={value}  value={value}>
+                <Tab key={value}  value={value || "mainSkills"}>
                   {label}
                 </Tab>
               ))}

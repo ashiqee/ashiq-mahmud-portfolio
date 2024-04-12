@@ -23,7 +23,7 @@ const Portfolio = () => {
 
 
     return (
-        <div id="portfolio" className="min-h-screen text-white container mx-auto   p-10 md:p-20">
+        <div id="portfolio" className=" text-white container mx-auto   p-5 md:p-5">
             <div className="text-center mt-10 md:mt-0 text-xl md:text-4xl">
                 <TextHover> My Recent Projects</TextHover>
                 <p className="text-sm my-2">Explore some of my latest MERN stack projects, highlighting the technologies used and their unique features.</p>

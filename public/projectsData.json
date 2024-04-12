@@ -30,13 +30,32 @@
     },
     {
       "id": 4,
+      "title": "Task Management App",
+      "description": "This project is designed to help you manage and organize task management seamlessly and user-friendly UI.",
+      "technologies": ["React", "React-dnd", "Tailwind CSS", "framer-motion", "Firebase","mongoose"],
+      "image": "https://i.ibb.co/jfbMzXS/TASK-MANAGEMENT.png",
+      "link":"https://task-management-as.web.app/",
+      "githubLink": "https://github.com/ashiqee/Task-Management-App"
+    },
+    {
+      "id": 5,
       "title": "Buet Employer Cricket Club",
       "description": "This website is a React-based platform designed for the cricket enthusiasts of the Buet Employer community.",
       "technologies": ["React", "Firebase", "Tailwind CSS"],
       "image": "https://cdn.kwork.com/files/portfolio/t0/50/9f4deb8c02fe2bf933f540a1d094dee1d30d15c2-1701683773.webp",
       "link":"https://buetcricket.web.app/",
       "githubLink": "https://github.com/ashiqee/buet-employer-sports"
+    },
+    {
+      "id": 6,
+      "title": "Online RSVP Wedding website",
+      "description": "RSVP simplifies wedding planning with powerful, easy online wedding RSVP, electronic invitations, and guest list management tools. Create Your Wedding Event.",
+      "technologies": ["React", "Firebase", "Tailwind CSS"],
+      "image": "https://i.ibb.co/thFy1zX/RSVP.png",
+      "link":"https://arthirituraj.com/",
+      "githubLink": "#"
     }
     
+
   ]
   
